@@ -43,4 +43,9 @@ $gutter-horizontal: 6rem;
     src: url(/font/Minecraft.ttf);
 }
 
-$font-minecraft:'minecraft';
+@font-face{
+    font-family: lemonada;
+    src: url(/font/Lemonada.ttf);
+}
+
+$font-minecraft:'lemonada';
