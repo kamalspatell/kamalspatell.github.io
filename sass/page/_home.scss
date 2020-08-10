@@ -1,0 +1,62 @@
+.articles {
+    padding:5rem 0;
+    @include containercenter;
+
+    @include respond(phone){
+        padding: 1rem;
+    }
+    @include respond(tab-port){
+        padding: 2rem;
+    }
+    
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 1.5rem;
+        margin: 2rem 0;
+        backface-visibility: hidden;
+
+    }
+
+    &__item {
+        display: grid;
+        align-items: center;
+        background-color: $color-white;
+        box-shadow: 0 0 5px rgba($color-black, 0.2);
+        border-radius: 1rem;
+        padding: 2rem;
+        font-weight: 100;
+        transition: all .2s;
+        
+        &:hover,
+        &:visited{
+            transform: scale(1.05);
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $color-dark;
+    }
+
+    &__artwork {
+        width: 100%;
+        height: auto;
+        vertical-align: middle;
+
+    }
+
+    &__details {
+        margin: 1rem 0;
+        line-height: 1.4;
+
+        &--h3 {
+            font-size:1.7rem;
+        }
+
+        &--p {
+            margin-top: 1rem;
+            font-size: 1.4rem;
+        }
+    }
+}

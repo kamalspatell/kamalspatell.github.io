@@ -1,0 +1,59 @@
+.writing {
+    @include containercenter;
+    padding: 3rem 0;
+    
+
+    @include respond(phone){
+        padding: 2rem;
+    }
+
+    &__header {
+
+        display: flex;
+        // justify-content: space-between;
+
+        &--info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 2rem;
+
+            
+        }
+
+        &--divimg{
+            margin-right: 4rem;
+
+            @include respond(phone){
+                margin-right: 0;
+            }
+        }
+
+        @include respond(phone){
+            flex-direction: column; 
+        }
+    }
+
+
+    &__excerpt {
+        margin-top: 2rem;
+        &-font {
+            font-size: 1.4rem;
+            color: $color-grey-dark-2;
+        }
+    }
+
+    &__image {
+        display: inline-block;
+        width: 100%;
+    }
+
+    &__description {
+        padding: 3rem 0;
+        line-height: 1.7;
+        
+        :not(:last-child){
+            margin-bottom: 2rem;
+        }
+    }
+}

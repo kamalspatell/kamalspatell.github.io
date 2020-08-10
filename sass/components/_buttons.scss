@@ -1,0 +1,61 @@
+.btn {
+
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1.2rem;
+        padding: 1.5rem;
+        margin-top: 1.5rem;
+        border-radius: 0.3rem;
+        display: inline-block;
+        transition: all .2s;
+        position: relative;
+        // background-color: $color-grey-dark-1;
+        color: $color-white;
+        cursor: pointer;
+    }
+
+    // &:hover{
+    //     background-color: $color-grey-dark-2;
+    // }
+
+    &--text {
+
+        &:link,
+        &:visited {
+            color: $color-grey-dark-3;
+            display: inline-block;
+            text-decoration: none;
+            border-bottom: 1px solid $color-grey-dark-3;
+            padding: 3px;
+            transition: all .2s;
+        }
+
+        &:hover{
+            background: $color-grey-dark-3;
+            color: $color-white;
+        }
+    }
+
+    &--grabcad{
+        text-decoration: none;
+        font-size: 1.5rem !important;
+        font-family: $font-minecraft;
+        margin: 2rem;
+        padding: 1rem;
+        border-radius: 1rem;
+        display: inline-block;
+        background-color: #2998ff;
+        transition: all .2s;
+        color: $color-white;
+
+        &:hover,
+        &:visited{
+            background-color: #2998ff;
+            transform: translateY(-2px) scale(1.05);
+        }
+    }
+
+}
