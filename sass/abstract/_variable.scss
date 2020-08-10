@@ -40,12 +40,10 @@ $gutter-horizontal: 6rem;
 //Font
 @font-face{
     font-family: minecraft;
-    src: url(/font/Minecraft.ttf);
-}
-
-@font-face{
-    font-family: lemonada;
+    // src: url(/font/Minecraft.ttf);
     src: url(/font/Lemonada.ttf);
 }
 
-$font-minecraft:'lemonada';
+
+
+$font-minecraft:'minecraft';
